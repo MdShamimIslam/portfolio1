@@ -11,8 +11,8 @@ const Home = () => {
       <img src={profile} alt="profile-image" className="home__img" />
       <div className="home__content">
         <div className="home__data">
-          <h1 className="home__title">
-            <span>I'm Shamim.</span> <br />
+          <h1 className="home__title text-center lg:text-start">
+            <span className="-mb-8 lg:-mb-0">I'm Shamim.</span> <br />
             Web Developer
           </h1>
           <p className="home__description">
@@ -22,6 +22,7 @@ const Home = () => {
             me.
           </p>
           <Link to="/about" className="button">
+            <div className="flex justify-center lg:justify-start">
             <div
               className="button justify-center flex items-center gap-3 rounded-full hover:bg-blue-500
               w-[180px] md:w-[200px] py-4 text-white"
@@ -30,6 +31,7 @@ const Home = () => {
               <span className="button__icon hover:text-black">
                 <FaArrowRight></FaArrowRight>
               </span>
+            </div>
             </div>
           </Link>
         </div>

@@ -14,16 +14,15 @@ const PortfolioItem = ({ title, details, img }) => {
         <h3 className="portfolio__title">{title}</h3>
       </div>
       {modal && (
-        <div className="portfolio__modal">
-          <div className="portfolio__modal-content">
-            {/* <button className="btn  btn-ghost modal__close" >X</button> */}
+        <div className="portfolio__modal p-5">
+          <div className="portfolio__modal-content mt-12">
             <button
-              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 mt-8 mr-16"
+              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 md:mt-8 md:mr-16 mt-6 mr-10"
               onClick={toggleModal}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6  text-black hover:text-white ml-3"
+                className="h-6 w-6  text-black hover:text-white lg:ml-3 ml-2"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -48,7 +47,7 @@ const PortfolioItem = ({ title, details, img }) => {
                 </li>
               ))}
             </ul>
-            <img src={img} alt="" className="modal__img" />
+            <img src={img} alt="" className="modal__img rounded-lg" />
           </div>
         </div>
       )}

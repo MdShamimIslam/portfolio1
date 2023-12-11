@@ -1,8 +1,6 @@
 import { FaHome,FaUser,FaEnvelopeOpen,FaFolderOpen, FaBriefcase } from 'react-icons/fa';
 import { FiCode, FiFileText, FiUser} from 'react-icons/fi';
 import work1 from '../../../Portfolios/personal-portfolio/src/assets/myShop.png';
-import work2 from '../../../Portfolios/personal-portfolio/src/assets/donation.png';
-import work3 from '../../../Portfolios/personal-portfolio/src/assets/training.png';
 import { orangeColor } from './components/Extra';
 import { greenColor } from './components/Extra';
 import { purpleColor } from './components/Extra';
@@ -232,7 +230,7 @@ export const portfolio = [
     },
     {
         id : 2,
-        img : work2,
+        img : work1,
         title : 'Donation',
         details : [
             {
@@ -259,7 +257,7 @@ export const portfolio = [
     },
     {
         id : 3,
-        img : work3,
+        img : work1,
         title : 'Training Program',
         details : [
             {
@@ -310,7 +308,61 @@ export const portfolio = [
                 desc : 'photo'
             }
         ]
-    }
+    },
+    {
+        id : 5,
+        img : work1,
+        title : 'MyShop',
+        details : [
+            {
+                icon : <FiFileText></FiFileText>,
+                title : 'Project',
+                desc : 'Photo'
+            },
+            {
+                icon : <FiUser></FiUser>,
+                title : 'Client',
+                desc : 'Dribble'
+            },
+            {
+                icon : <FiCode></FiCode>,
+                title : 'Languaget',
+                desc : 'Adobe'
+            },
+            {
+                icon : <FiFileText></FiFileText>,
+                title : 'Language',
+                desc : 'photo'
+            }
+        ]
+    },
+    {
+        id : 6,
+        img : work1,
+        title : 'MyShop',
+        details : [
+            {
+                icon : <FiFileText></FiFileText>,
+                title : 'Project',
+                desc : 'Photo'
+            },
+            {
+                icon : <FiUser></FiUser>,
+                title : 'Client',
+                desc : 'Dribble'
+            },
+            {
+                icon : <FiCode></FiCode>,
+                title : 'Languaget',
+                desc : 'Adobe'
+            },
+            {
+                icon : <FiFileText></FiFileText>,
+                title : 'Language',
+                desc : 'photo'
+            }
+        ]
+    },
 ]
 
 export const themes = [

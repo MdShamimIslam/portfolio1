@@ -16,6 +16,7 @@ const About = () => {
           About <span>Me</span>
         </h2>
         <div className="about__container grid">
+          <div className="flex justify-center ml-16 md:ml-0 lg:justify-start">
           <div className="about__info">
             <h3 className="section__subtitle">
               Personal Information
@@ -25,13 +26,14 @@ const About = () => {
             </ul>
             <a href={CV} download="" className="button">
               <div className="button justify-center flex items-center gap-3 rounded-full
-               hover:bg-blue-500  w-[180px] md:w-[200px] py-4 text-white">
+               hover:bg-blue-500  w-[180px] md:w-[200px] py-3 text-white">
                 Download CV
                 <span className="button__icon">
                   <FaDownload></FaDownload>
                 </span>
               </div>
             </a>
+          </div>
           </div>
           <div className="stats grid">
             <Stats></Stats>
@@ -48,7 +50,7 @@ const About = () => {
       <div className="separator"></div>
       <section className="resume">
       <h3 className="section__subtitle subtitle__center">Experience & Education</h3>
-      <div className="resume__container grid">
+      <div className="resume__container grid md:ml-16 lg:ml-0">
         <div className="resume__data">
           {
             resume.map((val)=>{

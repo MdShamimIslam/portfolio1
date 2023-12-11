@@ -10,6 +10,7 @@ const Contact = () => {
         Get In <span>Touch</span>
       </h2>
       <div className="contact__container container grid">
+        <div className="md:w-[500px] w-[300px] mx-auto">
         <div className="contact__data">
           <h3 className="contact__title">Don't be Shy !</h3>
           <p className="contact__description">
@@ -48,6 +49,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        </div>
 
         <form className="contact__form">
           <div className="form__input-group">
@@ -81,7 +83,7 @@ const Contact = () => {
             />
           </div>
           <button className=" button justify-center flex items-center gap-3 rounded-full hover:bg-blue-500
-              w-[180px] md:w-[200px] py-4 text-white">
+              w-[180px] md:w-[200px] py-3 text-white">
             Send Message
             <span className="contact__button-icon">
                 <FiSend></FiSend>

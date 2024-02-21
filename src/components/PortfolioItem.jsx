@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { MdFeaturedVideo } from "react-icons/md";
 
-const PortfolioItem = ({ title, details, img }) => {
+const PortfolioItem = ({ title, img, live, front, back, features }) => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -36,18 +37,25 @@ const PortfolioItem = ({ title, details, img }) => {
               </svg>
             </button>
             <h3 className="modal__title">{title}</h3>
-            <ul className="modal__list grid">
-              {details.map(({ icon, title, desc }, index) => (
-                <li className="modal__item" key={index}>
-                  <span className="item__icon">{icon}</span>
-                  <div>
-                    <span className="item__title">{title}</span>
-                    <span className="item__details">{desc}</span>
+            <div className="flex md:text-lg underline justify-between  md:gap-24 gap-5 text-blue-700">
+              <a href={front}>Client code</a>
+              <a href={back}>Server code</a>
+              <a href={live}>Live site </a>
+            </div>
+            <div className="mt-8">
+              <h3 className="text-xl flex gap-2 items-center">
+                <MdFeaturedVideo /> Features of project :
+              </h3>
+              <div className="mt-3">
+                {features?.map((feature) => (
+                  <div className="space-y-1" key={feature.id}>
+                    <p>{feature.f1}</p>
+                    <p>{feature.f2}</p>
+                    <p>{feature.f3}</p>
                   </div>
-                </li>
-              ))}
-            </ul>
-            <img src={img} alt="" className="modal__img rounded-lg" />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       )}

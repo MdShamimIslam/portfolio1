@@ -12,6 +12,7 @@
     border-radius: 30px;
     box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
     z-index: 1;
+    margin-left: 20px;
 }
 
 .home__data {

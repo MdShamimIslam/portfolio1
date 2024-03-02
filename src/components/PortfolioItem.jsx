@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { MdFeaturedVideo } from "react-icons/md";
+import { CgWebsite } from "react-icons/cg";
+import { FaServer, FaGithub } from "react-icons/fa";
 
 const PortfolioItem = ({ title, img, live, front, back, features }) => {
   const [modal, setModal] = useState(false);
@@ -12,7 +14,8 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
     <div className="portfolio__item">
       <img src={img} className="portfolio__img" alt="portfolio-image" />
       <div className="portfolio__hover" onClick={toggleModal}>
-        <h3 className="portfolio__title">{title}</h3>
+        {/* <h3 className="portfolio__title">{title}</h3> */}
+        <p className="portfolio__title">Click Here</p>
       </div>
       {modal && (
         <div className="portfolio__modal p-5">
@@ -36,11 +39,31 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
                 />
               </svg>
             </button>
-            <h3 className="modal__title">{title}</h3>
-            <div className="flex md:text-lg underline justify-between  md:gap-24 gap-5 text-blue-700">
-              <a href={front}>Client code</a>
-              <a href={back}>Server code</a>
-              <a href={live}>Live site </a>
+            <h3 className="modal__title">Project Name : {title}</h3>
+            <div className="flex md:text-lg justify-between underline  md:gap-24 gap-5 text-blue-700">
+              <a
+                href={front}
+                className="flex hover:text-gray-600  items-center gap-1"
+              >
+                <FaGithub></FaGithub>Client code
+              </a>
+              {
+                back ? <a
+                href={back}
+                className="flex hover:text-gray-600  items-center gap-1"
+              >
+                <FaGithub></FaGithub>Server code
+              </a>
+               : ''
+              }
+              
+              <a
+                href={live}
+                className="flex hover:text-gray-600  items-center gap-1"
+              >
+                <CgWebsite />
+                Live site{" "}
+              </a>
             </div>
             <div className="mt-8">
               <h3 className="text-xl flex gap-2 items-center">
@@ -48,7 +71,7 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
               </h3>
               <div className="mt-3">
                 {features?.map((feature) => (
-                  <div className="space-y-1" key={feature.id}>
+                  <div className="space-y-2" key={feature.id}>
                     <p>{feature.f1}</p>
                     <p>{feature.f2}</p>
                     <p>{feature.f3}</p>

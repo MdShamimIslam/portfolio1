@@ -13,7 +13,6 @@ const Portfolio = () => {
       <h2 className="section__title">
         My <span>Projects</span>
       </h2>
-      {/* <div className="portfolio__container container grid"> */}
       <div className="portfolio__container container grid">
         {portfolio.map((item) => (
           <PortfolioItem key={item.id} {...item}></PortfolioItem>

@@ -1,7 +1,7 @@
 import React from "react";
 import Info from "../../components/Info";
 import { FaDownload } from "react-icons/fa";
-import CV from "../../assets/resume.pdf";
+import CV from "../../assets/Shamim.pdf";
 import Stats from "../../components/Stats";
 import "./About.css";
 import Skills from "../../components/Skills";
@@ -32,7 +32,7 @@ const About = () => {
                   className="button justify-center flex items-center gap-3 rounded-full
                hover:bg-blue-500  w-[180px] md:w-[200px] py-3 text-white md:-ml-0 -ml-8 md:-mt-0 -mt-4"
                 >
-                  Download CV
+                  Download Resume
                   <span className="button__icon">
                     <FaDownload></FaDownload>
                   </span>

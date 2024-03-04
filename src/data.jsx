@@ -5,12 +5,16 @@ import {
   FaFolderOpen,
   FaBriefcase,
 } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
 import work1 from "../../../Portfolios/personal-portfolio/src/assets/wed.png";
 import work2 from "../../../Portfolios/personal-portfolio/src/assets/food.png";
 import work3 from "../../../Portfolios/personal-portfolio/src/assets/shop.png";
-import work4 from "../../../Portfolios/personal-portfolio/src/assets/academy.png";
+import work4 from "../../../Portfolios/personal-portfolio/src/assets/course.png";
 import work5 from "../../../Portfolios/personal-portfolio/src/assets/donate.png";
-import work6 from "../../../Portfolios/personal-portfolio/src/assets/course.png";
+import work6 from "../../../Portfolios/personal-portfolio/src/assets/reg.png";
+import work7 from "../../../Portfolios/personal-portfolio/src/assets/bistro.png";
+import work8 from "../../../Portfolios/personal-portfolio/src/assets/f.png";
+import work9 from "../../../Portfolios/personal-portfolio/src/assets/summer.png";
 import { orangeColor } from "./components/Extra";
 import { greenColor } from "./components/Extra";
 import { purpleColor } from "./components/Extra";
@@ -91,8 +95,8 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: "1+",
-    title: "Years of <br/> Experience",
+    no: "2+",
+    title: "Months of <br/> Experience",
   },
   {
     id: 2,
@@ -106,7 +110,7 @@ export const stats = [
   },
   {
     id: 4,
-    no: "3+",
+    no: "9+",
     title: "Awards <br/> Won",
   },
 ];
@@ -180,33 +184,17 @@ export const resume = [
     id: 1,
     category: "experience",
     icon: <FaBriefcase></FaBriefcase>,
-    year: "0 - Present",
-    title: "no position <span>empty company </span>",
-    desc: "I have no experience in job/intern related.",
+    year: "2024 - running",
+    title: "Self Team Project",
+    desc: "For more than two months we have been working on a group wise project with five to six people. As a web developer, I contributed to frontend and backend development,tackled challenges through collaborative problem-solving. This experience enhanced my technical skills and teamwork abilities, showcasing my commitment to delivering high-quality web solutions.",
   },
+
   {
     id: 2,
-    category: "experience",
-    icon: <FaBriefcase></FaBriefcase>,
-    year: "0 - Present",
-    title: "no position <span>empty company </span>",
-    desc: "I have no experience in job/intern related.",
-  },
-  {
-    id: 3,
     category: "education",
-    icon: <FaBriefcase></FaBriefcase>,
-    year: "2018 - Present",
-    title: "SSC (Science) <span> Jahurulhat Haji Elahi High School </span>",
-    desc: " Completed high school with a focus on mathematics and computer science. Participated in extracurricular activities such as coding clubs and robotics competitions.",
-  },
-  {
-    id: 4,
-    category: "education",
-    icon: <FaBriefcase></FaBriefcase>,
+    icon: <GiSkills />,
     year: "2019 - 2023",
-    title:
-      "Diploma in Engineering (CSE)<span>Dinajpur Polytechnic Institute</span>",
+    title: "Diploma in Eng. (CSE)<span>Dinajpur Polytechnic Institute</span>",
     desc: "Earned a Diploma in Computer Science and Engineering with specialization in web development. Completed coursework covering various programming languages and software development methodologies. Developed a project on web application development using HTML, CSS, JavaScript, Node.js, Express.js, Firebase and React.",
   },
 ];
@@ -236,6 +224,28 @@ export const portfolio = [
   },
   {
     id: 2,
+    img: work7,
+    title: "BistroFood",
+    front: "https://github.com/MdShamimIslam/bistroFood-client",
+    back: "https://github.com/MdShamimIslam/bistroFood-server",
+    live: "https://bistroo-food.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. This is a different food related website.",
+      },
+      {
+        id: 2,
+        f2: "2. A user can add the food of his choice to his card for which he needs to get it.Admin can delete and update each food item.",
+      },
+      {
+        id: 3,
+        f3: "3. Admin can see all users and admin can convert any user to admin if he wants.",
+      },
+    ],
+  },
+  {
+    id: 3,
     img: work2,
     title: "FoodBuzz",
     front: "https://github.com/MdShamimIslam/community-food-client",
@@ -257,7 +267,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: work3,
     title: "MyShop",
     front: "https://github.com/MdShamimIslam/technology-electric-client",
@@ -279,7 +289,7 @@ export const portfolio = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: work4,
     title: "s.Academy",
     front: "https://github.com/MdShamimIslam/educational-training-platform",
@@ -299,27 +309,7 @@ export const portfolio = [
       },
     ],
   },
-  {
-    id: 5,
-    img: work5,
-    title: "Donation",
-    front: "https://github.com/MdShamimIslam/donate-campaign",
-    live: "https://poor-donation.netlify.app",
-    features: [
-      {
-        id: 1,
-        f1: "1. This project is an educational training best programming project.",
-      },
-      {
-        id: 2,
-        f2: "2. It's includes a banner and service featuring top tutors and upcoming courses along with footer.",
-      },
-      {
-        id: 3,
-        f3: "3. It's includes a banner and service featuring top tutors and upcoming courses along with footer.",
-      },
-    ],
-  },
+  
   {
     id: 6,
     img: work6,
@@ -329,18 +319,82 @@ export const portfolio = [
     features: [
       {
         id: 1,
-        f1: "1. This project is an educational training best programming project.",
+        f1: "1. This is a course purchase related website.",
       },
       {
         id: 2,
-        f2: "2. It's includes a banner and service featuring top tutors and upcoming courses along with footer.",
+        f2: "2. A user cannot take a course duration above 20 hours and can take a course maximum once.",
       },
       {
         id: 3,
-        f3: "3. It's includes a banner and service featuring top tutors and upcoming courses along with footer.",
+        f3: "3. Each course has to be paid separately .",
       },
     ],
   },
+  {
+    id: 8,
+    img: work9,
+    title: "Summer-sale",
+    front: "https://github.com/MdShamimIslam/summer-sale",
+    live: "https://summer-sale9.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. A user can purchase the product of his choice.",
+      },
+      {
+        id: 2,
+        f2: "2. The user can see the list of products that he has purchased.",
+      },
+      {
+        id: 3,
+        f3: "3. If the user purchases more than 200 rupees, he will have to do a coupon to get the discount.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    img: work8,
+    title: "Fruit-Burst",
+    front: "https://github.com/MdShamimIslam/fruits-burst",
+    live: "https://jovial-granita-52febf.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. It is a design oriented website.",
+      },
+      {
+        id: 2,
+        f2: "2. The website contains header, banner, body and footer.",
+      },
+      {
+        id: 3,
+        f3: "3. The website provides social links to team member's.",
+      },
+    ],
+  },
+  {
+    id: 7,
+    img: work5,
+    title: "Donation",
+    front: "https://github.com/MdShamimIslam/donate-campaign",
+    live: "https://poor-donation.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. This is a donation related website.",
+      },
+      {
+        id: 2,
+        f2: "2. A user can make a donation for the food, clothing and education system.",
+      },
+      {
+        id: 3,
+        f3: "3. He can also see the percentage donation he has made in the pie chart.",
+      },
+    ],
+  },
+
 ];
 
 export const themes = [

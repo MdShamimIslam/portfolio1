@@ -21,7 +21,7 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
         <div className="portfolio__modal p-5">
           <div className="portfolio__modal-content mt-12">
             <button
-              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 md:mt-8 md:mr-16 mt-6 mr-10"
+              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 md:mt-4 lg:mr-12 md:mr-11 mt-6 mr-10"
               onClick={toggleModal}
             >
               <svg
@@ -39,7 +39,7 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
                 />
               </svg>
             </button>
-            <h3 className="modal__title">Project Name : {title}</h3>
+            <h3 className="modal__title text-2xl">{title}</h3>
             <div className="flex md:text-lg justify-between underline  md:gap-24 gap-5 text-blue-700">
               <a
                 href={front}
@@ -47,16 +47,17 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
               >
                 <FaGithub></FaGithub>Client code
               </a>
-              {
-                back ? <a
-                href={back}
-                className="flex hover:text-gray-600  items-center gap-1"
-              >
-                <FaGithub></FaGithub>Server code
-              </a>
-               : ''
-              }
-              
+              {back ? (
+                <a
+                  href={back}
+                  className="flex hover:text-gray-600  items-center gap-1"
+                >
+                  <FaGithub></FaGithub>Server code
+                </a>
+              ) : (
+                ""
+              )}
+
               <a
                 href={live}
                 className="flex hover:text-gray-600  items-center gap-1"

@@ -6,7 +6,7 @@ import { BsSun, BsMoon } from "react-icons/bs";
 import "./Themes.css";
 
 const getStorageColor = () => {
-  let color = "purple";
+  let color = "green";
   if (localStorage.getItem("color")) {
     color = localStorage.getItem("color");
   }
@@ -15,7 +15,7 @@ const getStorageColor = () => {
 
 // ----------theme related code----------
 const getStorageTheme = () => {
-  let theme = "light-theme";
+  let theme = "dark-theme";
   if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme");
   }

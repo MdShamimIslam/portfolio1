@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { MdFeaturedVideo } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
-import { FaServer, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { GrTechnology } from "react-icons/gr";
 
-const PortfolioItem = ({ title, img, live, front, back, features }) => {
+const PortfolioItem = ({
+  title,
+  img,
+  live,
+  front,
+  back,
+  features,
+  technology,
+}) => {
   const [modal, setModal] = useState(false);
-
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -21,7 +29,7 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
         <div className="portfolio__modal p-5">
           <div className="portfolio__modal-content mt-12">
             <button
-              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 md:mt-4 lg:mr-12 md:mr-11 mt-6 mr-10"
+              className="btn btn-circle btn-outline modal__close rounded-full bg-orange-500 md:mt-6  md:mr-16 mt-6 mr-9"
               onClick={toggleModal}
             >
               <svg
@@ -40,19 +48,19 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
               </svg>
             </button>
             <h3 className="modal__title text-2xl">{title}</h3>
-            <div className="flex md:text-lg justify-between underline  md:gap-24 gap-5 text-blue-700">
+            <div className="flex md:text-lg justify-between underline  md:gap-24 gap-5 text-blue-500">
               <a
                 href={front}
-                className="flex hover:text-gray-600  items-center gap-1"
+                className="flex hover:text-green-400  items-center gap-1"
               >
-                <FaGithub></FaGithub>Client code
+                <FaGithub></FaGithub>Client
               </a>
               {back ? (
                 <a
                   href={back}
-                  className="flex hover:text-gray-600  items-center gap-1"
+                  className="flex hover:text-green-400  items-center gap-1"
                 >
-                  <FaGithub></FaGithub>Server code
+                  <FaGithub></FaGithub>Server
                 </a>
               ) : (
                 ""
@@ -60,7 +68,7 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
 
               <a
                 href={live}
-                className="flex hover:text-gray-600  items-center gap-1"
+                className="flex hover:text-green-400  items-center gap-1"
               >
                 <CgWebsite />
                 Live site{" "}
@@ -78,6 +86,13 @@ const PortfolioItem = ({ title, img, live, front, back, features }) => {
                     <p>{feature.f3}</p>
                   </div>
                 ))}
+              </div>
+              <div className="mt-4">
+                <h2 className="text-lg flex gap-2 items-center">
+                  <GrTechnology />
+                  Technology used :
+                </h2>
+                <p className="mt-2">( {technology} )</p>
               </div>
             </div>
           </div>

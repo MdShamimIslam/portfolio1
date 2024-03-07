@@ -10,7 +10,6 @@ import ResumeItem from "../../components/ResumeItem";
 import { Helmet } from "react-helmet-async";
 
 const About = () => {
-
   return (
     <main className="section container">
       <Helmet>
@@ -20,24 +19,29 @@ const About = () => {
         <h2 className="section__title">
           About <span>Me</span>
         </h2>
-        <div className="about__container grid">
+        <div className="about__container grid ">
           <div className="flex justify-center ml-16 md:ml-0 lg:justify-start">
-            <div className="about__info">
+            <div className="about__info ">
               <h3 className="section__subtitle">Personal Information</h3>
               <ul className="info__list grid md:-ml-0 -ml-8">
                 <Info></Info>
               </ul>
-              <a href={CV} download="" className="button">
-                <div
-                  className="button justify-center flex items-center gap-3 rounded-full
-               hover:bg-blue-500  w-[180px] md:w-[200px] py-3 text-white md:-ml-0 -ml-8 md:-mt-0 -mt-4"
+
+              <div
+                className="button rounded-full
+                w-[180px] md:w-[230px] py-3 md:ml-0 -ml-8 md:-mt-0 -mt-3  text-white "
+              >
+                <a
+                  href={CV}
+                  download=""
+                  className=" flex items-center justify-center gap-3"
                 >
                   Download Resume
-                  <span className="button__icon">
+                  <span className="">
                     <FaDownload></FaDownload>
                   </span>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
           <div className="stats grid">

@@ -221,6 +221,7 @@ export const portfolio = [
         f3: "3. Admin can make users admin, can delete users, can request premiums of users and can approve who has sent the request to whom, and can see the success story of the user.",
       },
     ],
+    technology:"Html, Css, JavaScript, React, MongoDB, JWT, Stripe, Tanstack-query, Axios, Express.Js, React-hook-form, React-router-dom, Node.js, Firebase etc."
   },
   {
     id: 2,
@@ -243,6 +244,7 @@ export const portfolio = [
         f3: "3. Admin can see all users and admin can convert any user to admin if he wants.",
       },
     ],
+    technology:"Html, Css, Tailwind, JavaScript, React, MongoDB, JWT, Stripe, Tanstack-query, Axios, Express.Js, React-hook-form, React-router-dom, Node.js, Firebase, Netlify etc."
   },
   {
     id: 3,
@@ -265,6 +267,7 @@ export const portfolio = [
         f3: "3. On the other hand, if another user needs food, he can send a request for that food.He can see in table form what food he has requested for.If he wants he can cancel the meal for which he has sent the request.",
       },
     ],
+    technology:"Html, Css, Tailwind, JavaScript, React, MongoDB, Express.Js, React-hook-form, React-router-dom, Node.js, Firebase etc."
   },
   {
     id: 4,
@@ -287,6 +290,7 @@ export const portfolio = [
         f3: "3. On the other hand, another user can add the product of that brand and later can see and delete the product added by him in table form.",
       },
     ],
+    technology:"Html, Css, Tailwind, JavaScript, React, MongoDB, Express.Js, React-hook-form, React-router-dom, Node.js, Firebase etc."
   },
   {
     id: 5,
@@ -308,12 +312,12 @@ export const portfolio = [
         f3: "3. It's includes a banner and service featuring top tutors and upcoming courses along with footer.",
       },
     ],
+    technology:"Html, Css, Tailwind, JavaScript, React, React-hook-form, React-router-dom, Firebase etc."
   },
-  
   {
     id: 6,
     img: work6,
-    title: "Course Registration",
+    title: "Course Register",
     front: "https://github.com/MdShamimIslam/course-register",
     live: "https://creative-custard-b91aff.netlify.app",
     features: [
@@ -330,48 +334,7 @@ export const portfolio = [
         f3: "3. Each course has to be paid separately .",
       },
     ],
-  },
-  {
-    id: 8,
-    img: work9,
-    title: "Summer-sale",
-    front: "https://github.com/MdShamimIslam/summer-sale",
-    live: "https://summer-sale9.netlify.app",
-    features: [
-      {
-        id: 1,
-        f1: "1. A user can purchase the product of his choice.",
-      },
-      {
-        id: 2,
-        f2: "2. The user can see the list of products that he has purchased.",
-      },
-      {
-        id: 3,
-        f3: "3. If the user purchases more than 200 rupees, he will have to do a coupon to get the discount.",
-      },
-    ],
-  },
-  {
-    id: 9,
-    img: work8,
-    title: "Fruit-Burst",
-    front: "https://github.com/MdShamimIslam/fruits-burst",
-    live: "https://jovial-granita-52febf.netlify.app",
-    features: [
-      {
-        id: 1,
-        f1: "1. It is a design oriented website.",
-      },
-      {
-        id: 2,
-        f2: "2. The website contains header, banner, body and footer.",
-      },
-      {
-        id: 3,
-        f3: "3. The website provides social links to team member's.",
-      },
-    ],
+    technology:"Html, Css, Tailwind, JavaScript, ES6, React, React-hot-toast etc."
   },
   {
     id: 7,
@@ -393,7 +356,53 @@ export const portfolio = [
         f3: "3. He can also see the percentage donation he has made in the pie chart.",
       },
     ],
+    technology:"Html, Css, JavaScript, ES6, React, Netlify."
   },
+  {
+    id: 8,
+    img: work9,
+    title: "Summer-sale",
+    front: "https://github.com/MdShamimIslam/summer-sale",
+    live: "https://summer-sale9.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. A user can purchase the product of his choice.",
+      },
+      {
+        id: 2,
+        f2: "2. The user can see the list of products that he has purchased.",
+      },
+      {
+        id: 3,
+        f3: "3. If the user purchases more than 200 rupees, he will have to do a coupon to get the discount.",
+      },
+    ],
+    technology:"Html, Css, JavaScript, ES6, Netlify."
+  },
+  {
+    id: 9,
+    img: work8,
+    title: "Fruit-Burst",
+    front: "https://github.com/MdShamimIslam/fruits-burst",
+    live: "https://jovial-granita-52febf.netlify.app",
+    features: [
+      {
+        id: 1,
+        f1: "1. It is a design oriented website.",
+      },
+      {
+        id: 2,
+        f2: "2. The website contains header, banner, body and footer.",
+      },
+      {
+        id: 3,
+        f3: "3. The website provides social links to team member's.",
+      },
+    ],
+    technology:"Html, Css, Netlify."
+  },
+  
 
 ];
 

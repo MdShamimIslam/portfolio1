@@ -5,12 +5,14 @@ import { FaArrowRight } from "react-icons/fa";
 import "./Home.css";
 import { useTypewriter } from "react-simple-typewriter";
 import { Helmet } from "react-helmet-async";
+
 const Home = () => {
   const [text] = useTypewriter({
     words: [
-      "Frontend Developer.",
-      "Backend Developer.",
-      "Full-stack Developer.",
+      "Front End Developer.",
+      "Back End Developer.",
+      "MERN-Stack Developer.",
+      "Full-Stack Developer.",
     ],
     loop: true,
     typeSpeed: 60,
@@ -26,8 +28,8 @@ const Home = () => {
       <div className="home__content ">
         <div className="home__data">
           <h1 className="home__title text-center lg:text-start">
-            <span className="-mb-8 lg:-mb-0">I'm Shamim.</span> <br />
-            <p className="lg:text-5xl md:text-4xl text-3xl">{text}</p>
+            <span className="-mb-8 lg:-mb-0">I'm Shamim</span> <br />
+            <p className="lg:text-4xl md:text-3xl text-2xl">{text}</p>
           </h1>
           <p className="home__description">
             I'm a Bangladeshi based web developer & front-end developer focus on
@@ -55,3 +57,5 @@ const Home = () => {
 };
 
 export default Home;
+
+

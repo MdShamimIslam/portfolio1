@@ -60,7 +60,7 @@ const Themes = () => {
           <FaCog></FaCog>
         </div>
         <div className="theme__toggler" onClick={toggleTheme}>
-          {theme === "light-theme" ? <BsMoon></BsMoon> : <BsSun></BsSun>}
+          {theme === "light-theme" ? <BsSun></BsSun> :  <BsMoon></BsMoon>}
         </div>
         <h3 className="style__switcher-title">Style Switcher</h3>
         <div className="style__switcher-items">

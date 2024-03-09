@@ -110,7 +110,7 @@ export const stats = [
   },
   {
     id: 4,
-    no: "9+",
+    no: "11+",
     title: "Awards <br/> Won",
   },
 ];
@@ -119,17 +119,17 @@ export const skills = [
   {
     id: 1,
     title: "Html",
-    percentage: "95",
+    percentage: "97",
   },
   {
     id: 2,
     title: "Css",
-    percentage: "88",
+    percentage: "95",
   },
   {
     id: 3,
     title: "Tailwind",
-    percentage: "92",
+    percentage: "93",
   },
   {
     id: 4,
@@ -138,6 +138,11 @@ export const skills = [
   },
   {
     id: 5,
+    title: "Sass",
+    percentage: "85",
+  },
+  {
+    id: 11,
     title: "JavaScript",
     percentage: "90",
   },
@@ -149,13 +154,13 @@ export const skills = [
   {
     id: 7,
     title: "Next.js",
-    percentage: "55",
+    percentage: "65",
   },
   ,
   {
     id: 8,
     title: "Express.js",
-    percentage: "83",
+    percentage: "73",
   },
   {
     id: 9,
@@ -165,17 +170,12 @@ export const skills = [
   {
     id: 10,
     title: "MongoDB",
-    percentage: "85",
-  },
-  {
-    id: 11,
-    title: "Redux",
-    percentage: "45",
+    percentage: "81",
   },
   {
     id: 12,
     title: "Firebase",
-    percentage: "88",
+    percentage: "84",
   },
 ];
 
@@ -184,7 +184,7 @@ export const resume = [
     id: 1,
     category: "experience",
     icon: <FaBriefcase></FaBriefcase>,
-    year: "2024 - running",
+    year: "2024 - Present",
     title: "Self Team Project",
     desc: "For more than two months we have been working on a group wise project with five to six people. As a web developer, I contributed to frontend and backend development,tackled challenges through collaborative problem-solving. This experience enhanced my technical skills and teamwork abilities, showcasing my commitment to delivering high-quality web solutions.",
   },
